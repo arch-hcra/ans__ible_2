@@ -1,0 +1,8 @@
+---
+- hosts: web
+  roles:
+     - { role: 'test_1' }
+
+- hosts: web
+  roles:
+     - { role: 'hostname' }
