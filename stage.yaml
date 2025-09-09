@@ -2,7 +2,8 @@
 - hosts: web
   roles:
      - { role: 'test_1' }
-
-- hosts: web
-  roles:
-     - { role: 'hostname' }
+  remote_user: admin2
+  vars:
+    user_groups:
+      - sudo
+      - docker
